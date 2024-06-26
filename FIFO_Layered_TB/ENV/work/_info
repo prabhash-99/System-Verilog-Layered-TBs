@@ -1,0 +1,140 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Scaledge_work/System_verilog/layered_testbench/FIFO/FIFO_2/ENV
+T_opt
+!s110 1719347709
+V^5OS?QOa5bON2e<YIOi^o2
+04 3 4 work top fast 0
+=1-d4548bb3d3af-667b29fc-3bb-1188
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.7c;67
+vasync_fifo
+Z2 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z3 !s110 1719347707
+!i10b 1
+!s100 gJ:=9HHBLdB[=neU7zXCR1
+Il@:0m<kCz3Q^SZj2GD`l=2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s105 fifo_sv_unit
+S1
+R0
+w1718819781
+8../RTL/fifo.sv
+F../RTL/fifo.sv
+L0 3
+Z5 OL;L;10.7c;67
+r1
+!s85 0
+31
+Z6 !s108 1719347707.000000
+Z7 !s107 interface.sv|../TEST/test.sv|../TEST/test_9_extnd_in_between_reset.sv|../TEST/test_8_extnd_parallel.sv|../TEST/test_7_extnd_overflowflag.sv|../TEST/test_5_extnd_emptyflag.sv|../TEST/test_4_extnd_flagfull.sv|../TEST/test_3_extnd_simultaneous.sv|../TEST/test_2_extnd_back2back.sv|../TEST/test_1_extnd_sanity.sv|environment.sv|functional_coverage.sv|scoreboard.sv|monitor.sv|driver.sv|generator.sv|transaction.sv|define.sv|../TOP/top.sv|../TEST/package_1.sv|../RTL/fifo.sv|
+Z8 !s90 -coveropt|3|+acc|../RTL/fifo.sv|../TEST/package_1.sv|../TOP/top.sv|+incdir+../TEST|+incdir+../ENV|+incdir+../RTL|
+!i113 0
+Z9 !s102 -coveropt 3
+Z10 o-coveropt 3 +acc -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 !s92 -coveropt 3 +acc +incdir+../TEST +incdir+../ENV +incdir+../RTL -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+Yinf
+R2
+R3
+!i10b 1
+!s100 Jz``YXF7EX^hBA66Q0NNT0
+ILJae3HJ9Jd@HRTEDkZc7^1
+R4
+Z12 !s105 top_sv_unit
+S1
+R0
+Z13 w1719258784
+8interface.sv
+Finterface.sv
+L0 10
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+R1
+Xpkg_1
+!s115 inf
+R2
+R3
+!i10b 1
+!s100 [GMzC>TLhSS:kM<1N:ZEL3
+I4j1IRBAfo<;l44l3lHDc80
+V4j1IRBAfo<;l44l3lHDc80
+S1
+R0
+w1719347096
+F../TEST/package_1.sv
+Fdefine.sv
+Ftransaction.sv
+Fgenerator.sv
+Fdriver.sv
+Fmonitor.sv
+Fscoreboard.sv
+Ffunctional_coverage.sv
+Fenvironment.sv
+F../TEST/test_1_extnd_sanity.sv
+F../TEST/test_2_extnd_back2back.sv
+F../TEST/test_3_extnd_simultaneous.sv
+F../TEST/test_4_extnd_flagfull.sv
+F../TEST/test_5_extnd_emptyflag.sv
+F../TEST/test_7_extnd_overflowflag.sv
+F../TEST/test_8_extnd_parallel.sv
+F../TEST/test_9_extnd_in_between_reset.sv
+F../TEST/test.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+R1
+vtop
+R2
+DXx4 work 5 pkg_1 0 22 4j1IRBAfo<;l44l3lHDc80
+R3
+!i10b 1
+!s100 ^f0j43OA[:k5ZbAOdPD^=0
+IBSUK0;RYD9cS8WYW;WVk52
+R4
+R12
+S1
+R0
+R13
+8../TOP/top.sv
+F../TOP/top.sv
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R11
+R1

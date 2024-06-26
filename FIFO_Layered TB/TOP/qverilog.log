@@ -1,0 +1,13 @@
+Start time: 14:27:52 on May 10,2024
+qverilog top.sv 
+** Error: top.sv(4): Cannot find `include file "package_1.sv" in directories:
+    C:/questasim64_10.7c/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src
+** Error: top.sv(5): Cannot find `include file "interface.sv" in directories:
+    C:/questasim64_10.7c/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src
+** Error: top.sv(6): Cannot find `include file "fifo.sv" in directories:
+    C:/questasim64_10.7c/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src
+-- Compiling module top
+** Error: top.sv(11): (qverilog-13006) Could not find the package (pkg_1).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+** Error: (qverilog-13069) top.sv(18): near ".": syntax error, unexpected '.', expecting ')'.
+End time: 14:27:52 on May 10,2024, Elapsed time: 0:00:00
+Errors: 5, Warnings: 0
