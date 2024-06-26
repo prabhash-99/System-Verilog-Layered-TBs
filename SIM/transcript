@@ -1,0 +1,635 @@
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+cd ../SIM
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 01:59:17 on Jun 26,2024
+# vlog -reportprogress 300 -coveropt 3 "+acc" ../RTL/fifo.sv ../TEST/package_1.sv ../TOP/top.sv "+incdir+../TEST" "+incdir+../ENV" "+incdir+../RTL" 
+# -- Compiling module async_fifo
+# -- Compiling package pkg_1
+# ** Warning: ** while parsing file included at ../TOP/top.sv(3)
+# ** at ../TEST/package_1.sv(1): (vlog-2275) 'pkg_1' already exists and will be overwritten.
+# -- Compiling package pkg_1
+# -- Compiling interface inf
+# -- Compiling module top
+# -- Importing package pkg_1
+# 
+# Top level modules:
+# 	top
+# End time: 01:59:18 on Jun 26,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" "+IN_BETWEEN_RESET" work.top 
+# Start time: 01:59:18 on Jun 26,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.inf(fast)
+# Loading work.pkg_1(fast)
+# Loading work.top(fast)
+# Loading work.inf(fast)
+# Loading work.async_fifo(fast)
+# Warning: In instance '\/pkg_1::functional_coverage::fifo_cv_grp ' the 'option.per_instance' is set to '0' (false). Assignment to members 'weight', 'goal' and 'comment' of 'option' would not have any effect.
+# COnnect of generator
+# calling of env connect phase
+# ---------------At Generator Class-----------------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 0	|	Functionality		|	WRITE
+# 0	|	wr_enbl		|	1
+# 0	|	rd_enbl		|	0
+# 0	|	wr_data		|	149
+# 0	|	rd_data		|	0
+# 0	|	empty_flag		|	0
+# 0	|	full_flag		|	0
+# 0	|	overflow_flag		|	0
+# 0	|	underflow_flag		|	0
+# 0	|	almost_empty_flag		|	0
+# 0	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ----- Reset Has Started (Time: 0) -----
+# ---------At Monitor(RESET CONDITION)---------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 43	|	Functionality		|	WRITE
+# 43	|	wr_enbl		|	0
+# 43	|	rd_enbl		|	0
+# 43	|	wr_data		|	0
+# 43	|	rd_data		|	0
+# 43	|	empty_flag		|	1
+# 43	|	full_flag		|	0
+# 43	|	overflow_flag		|	0
+# 43	|	underflow_flag		|	0
+# 43	|	almost_empty_flag		|	0
+# 43	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ----- Reset Has Ended (Time: 43) -----
+# Write Drive Task Started,43
+# Read Drive Task Started,43
+# ------ DRIVER ------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 43	|	Functionality		|	WRITE
+# 43	|	wr_enbl		|	1
+# 43	|	rd_enbl		|	0
+# 43	|	wr_data		|	149
+# 43	|	rd_data		|	0
+# 43	|	empty_flag		|	0
+# 43	|	full_flag		|	0
+# 43	|	overflow_flag		|	0
+# 43	|	underflow_flag		|	0
+# 43	|	almost_empty_flag		|	0
+# 43	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# -----------At ScoreBOARD(Original Value)------------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 43	|	Functionality		|	WRITE
+# 43	|	wr_enbl		|	0
+# 43	|	rd_enbl		|	0
+# 43	|	wr_data		|	0
+# 43	|	rd_data		|	0
+# 43	|	empty_flag		|	1
+# 43	|	full_flag		|	0
+# 43	|	overflow_flag		|	0
+# 43	|	underflow_flag		|	0
+# 43	|	almost_empty_flag		|	0
+# 43	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ** Info: ::::::Empty Flag is asserted and It's working completely Fine:::::
+#    Time: 43 ns  Scope: pkg_1.scoreboard.run File: ../ENV/scoreboard.sv Line: 102
+# -----At Functional Coverage Class-----
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 43	|	Functionality		|	WRITE
+# 43	|	wr_enbl		|	0
+# 43	|	rd_enbl		|	0
+# 43	|	wr_data		|	0
+# 43	|	rd_data		|	0
+# 43	|	empty_flag		|	1
+# 43	|	full_flag		|	0
+# 43	|	overflow_flag		|	0
+# 43	|	underflow_flag		|	0
+# 43	|	almost_empty_flag		|	0
+# 43	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ---------------At Generator Class-----------------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 45	|	Functionality		|	READ
+# 45	|	wr_enbl		|	0
+# 45	|	rd_enbl		|	1
+# 45	|	wr_data		|	96
+# 45	|	rd_data		|	0
+# 45	|	empty_flag		|	0
+# 45	|	full_flag		|	0
+# 45	|	overflow_flag		|	0
+# 45	|	underflow_flag		|	0
+# 45	|	almost_empty_flag		|	0
+# 45	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ------ DRIVER ------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 45	|	Functionality		|	READ
+# 45	|	wr_enbl		|	0
+# 45	|	rd_enbl		|	1
+# 45	|	wr_data		|	96
+# 45	|	rd_data		|	0
+# 45	|	empty_flag		|	0
+# 45	|	full_flag		|	0
+# 45	|	overflow_flag		|	0
+# 45	|	underflow_flag		|	0
+# 45	|	almost_empty_flag		|	0
+# 45	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# Write DATA sampling,149,Inf->149,55
+# ---------At Monitor(WRITE)---------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 55	|	Functionality		|	WRITE
+# 55	|	wr_enbl		|	1
+# 55	|	rd_enbl		|	0
+# 55	|	wr_data		|	149
+# 55	|	rd_data		|	0
+# 55	|	empty_flag		|	0
+# 55	|	full_flag		|	0
+# 55	|	overflow_flag		|	0
+# 55	|	underflow_flag		|	0
+# 55	|	almost_empty_flag		|	0
+# 55	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# -----------At ScoreBOARD(Original Value)------------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 55	|	Functionality		|	WRITE
+# 55	|	wr_enbl		|	1
+# 55	|	rd_enbl		|	0
+# 55	|	wr_data		|	149
+# 55	|	rd_data		|	0
+# 55	|	empty_flag		|	0
+# 55	|	full_flag		|	0
+# 55	|	overflow_flag		|	0
+# 55	|	underflow_flag		|	0
+# 55	|	almost_empty_flag		|	0
+# 55	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# -----At Functional Coverage Class-----
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 55	|	Functionality		|	WRITE
+# 55	|	wr_enbl		|	1
+# 55	|	rd_enbl		|	0
+# 55	|	wr_data		|	149
+# 55	|	rd_data		|	0
+# 55	|	empty_flag		|	0
+# 55	|	full_flag		|	0
+# 55	|	overflow_flag		|	0
+# 55	|	underflow_flag		|	0
+# 55	|	almost_empty_flag		|	0
+# 55	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# Welcome to Read Drive task
+# ---------At Monitor(READ)---------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 110	|	Functionality		|	READ
+# 110	|	wr_enbl		|	0
+# 110	|	rd_enbl		|	1
+# 110	|	wr_data		|	0
+# 110	|	rd_data		|	149
+# 110	|	empty_flag		|	0
+# 110	|	full_flag		|	0
+# 110	|	overflow_flag		|	0
+# 110	|	underflow_flag		|	1
+# 110	|	almost_empty_flag		|	0
+# 110	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ---------------At Generator Class-----------------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 110	|	Functionality		|	WRITE
+# 110	|	wr_enbl		|	1
+# 110	|	rd_enbl		|	0
+# 110	|	wr_data		|	137
+# 110	|	rd_data		|	0
+# 110	|	empty_flag		|	0
+# 110	|	full_flag		|	0
+# 110	|	overflow_flag		|	0
+# 110	|	underflow_flag		|	0
+# 110	|	almost_empty_flag		|	0
+# 110	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# -----------At ScoreBOARD(Original Value)------------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 110	|	Functionality		|	READ
+# 110	|	wr_enbl		|	0
+# 110	|	rd_enbl		|	1
+# 110	|	wr_data		|	0
+# 110	|	rd_data		|	149
+# 110	|	empty_flag		|	0
+# 110	|	full_flag		|	0
+# 110	|	overflow_flag		|	0
+# 110	|	underflow_flag		|	1
+# 110	|	almost_empty_flag		|	0
+# 110	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ** Error: :::::Empty Flag didn't get asserted and it's not wroking properly:::::
+#    Time: 110 ns  Scope: pkg_1.scoreboard.run File: ../ENV/scoreboard.sv Line: 105
+# -----At Functional Coverage Class-----
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 110	|	Functionality		|	READ
+# 110	|	wr_enbl		|	0
+# 110	|	rd_enbl		|	1
+# 110	|	wr_data		|	0
+# 110	|	rd_data		|	149
+# 110	|	empty_flag		|	0
+# 110	|	full_flag		|	0
+# 110	|	overflow_flag		|	0
+# 110	|	underflow_flag		|	1
+# 110	|	almost_empty_flag		|	0
+# 110	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ------ DRIVER ------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 110	|	Functionality		|	WRITE
+# 110	|	wr_enbl		|	1
+# 110	|	rd_enbl		|	0
+# 110	|	wr_data		|	137
+# 110	|	rd_data		|	0
+# 110	|	empty_flag		|	0
+# 110	|	full_flag		|	0
+# 110	|	overflow_flag		|	0
+# 110	|	underflow_flag		|	0
+# 110	|	almost_empty_flag		|	0
+# 110	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ** Info: ::::::Both WRITE & READ Data are same ::::: Write DATA-149,Read DATA-149::::::
+#    Time: 110 ns  Scope: pkg_1.scoreboard.data_comparision_block File: ../ENV/scoreboard.sv Line: 39
+# ---------------At Generator Class-----------------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 115	|	Functionality		|	READ
+# 115	|	wr_enbl		|	0
+# 115	|	rd_enbl		|	1
+# 115	|	wr_data		|	254
+# 115	|	rd_data		|	0
+# 115	|	empty_flag		|	0
+# 115	|	full_flag		|	0
+# 115	|	overflow_flag		|	0
+# 115	|	underflow_flag		|	0
+# 115	|	almost_empty_flag		|	0
+# 115	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ------ DRIVER ------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 115	|	Functionality		|	READ
+# 115	|	wr_enbl		|	0
+# 115	|	rd_enbl		|	1
+# 115	|	wr_data		|	254
+# 115	|	rd_data		|	0
+# 115	|	empty_flag		|	0
+# 115	|	full_flag		|	0
+# 115	|	overflow_flag		|	0
+# 115	|	underflow_flag		|	0
+# 115	|	almost_empty_flag		|	0
+# 115	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# Write DATA sampling,137,Inf->137,125
+# ---------At Monitor(WRITE)---------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 125	|	Functionality		|	WRITE
+# 125	|	wr_enbl		|	1
+# 125	|	rd_enbl		|	0
+# 125	|	wr_data		|	137
+# 125	|	rd_data		|	0
+# 125	|	empty_flag		|	0
+# 125	|	full_flag		|	0
+# 125	|	overflow_flag		|	0
+# 125	|	underflow_flag		|	0
+# 125	|	almost_empty_flag		|	0
+# 125	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# -----------At ScoreBOARD(Original Value)------------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 125	|	Functionality		|	WRITE
+# 125	|	wr_enbl		|	1
+# 125	|	rd_enbl		|	0
+# 125	|	wr_data		|	137
+# 125	|	rd_data		|	0
+# 125	|	empty_flag		|	0
+# 125	|	full_flag		|	0
+# 125	|	overflow_flag		|	0
+# 125	|	underflow_flag		|	0
+# 125	|	almost_empty_flag		|	0
+# 125	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# -----At Functional Coverage Class-----
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 125	|	Functionality		|	WRITE
+# 125	|	wr_enbl		|	1
+# 125	|	rd_enbl		|	0
+# 125	|	wr_data		|	137
+# 125	|	rd_data		|	0
+# 125	|	empty_flag		|	0
+# 125	|	full_flag		|	0
+# 125	|	overflow_flag		|	0
+# 125	|	underflow_flag		|	0
+# 125	|	almost_empty_flag		|	0
+# 125	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# Welcome to Read Drive task
+# ---------At Monitor(READ)---------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 170	|	Functionality		|	READ
+# 170	|	wr_enbl		|	0
+# 170	|	rd_enbl		|	1
+# 170	|	wr_data		|	0
+# 170	|	rd_data		|	137
+# 170	|	empty_flag		|	0
+# 170	|	full_flag		|	0
+# 170	|	overflow_flag		|	0
+# 170	|	underflow_flag		|	1
+# 170	|	almost_empty_flag		|	0
+# 170	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ---------------At Generator Class-----------------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 170	|	Functionality		|	WRITE
+# 170	|	wr_enbl		|	1
+# 170	|	rd_enbl		|	0
+# 170	|	wr_data		|	168
+# 170	|	rd_data		|	0
+# 170	|	empty_flag		|	0
+# 170	|	full_flag		|	0
+# 170	|	overflow_flag		|	0
+# 170	|	underflow_flag		|	0
+# 170	|	almost_empty_flag		|	0
+# 170	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# -----------At ScoreBOARD(Original Value)------------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 170	|	Functionality		|	READ
+# 170	|	wr_enbl		|	0
+# 170	|	rd_enbl		|	1
+# 170	|	wr_data		|	0
+# 170	|	rd_data		|	137
+# 170	|	empty_flag		|	0
+# 170	|	full_flag		|	0
+# 170	|	overflow_flag		|	0
+# 170	|	underflow_flag		|	1
+# 170	|	almost_empty_flag		|	0
+# 170	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ** Error: :::::Empty Flag didn't get asserted and it's not wroking properly:::::
+#    Time: 170 ns  Scope: pkg_1.scoreboard.run File: ../ENV/scoreboard.sv Line: 105
+# -----At Functional Coverage Class-----
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 170	|	Functionality		|	READ
+# 170	|	wr_enbl		|	0
+# 170	|	rd_enbl		|	1
+# 170	|	wr_data		|	0
+# 170	|	rd_data		|	137
+# 170	|	empty_flag		|	0
+# 170	|	full_flag		|	0
+# 170	|	overflow_flag		|	0
+# 170	|	underflow_flag		|	1
+# 170	|	almost_empty_flag		|	0
+# 170	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ------ DRIVER ------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 170	|	Functionality		|	WRITE
+# 170	|	wr_enbl		|	1
+# 170	|	rd_enbl		|	0
+# 170	|	wr_data		|	168
+# 170	|	rd_data		|	0
+# 170	|	empty_flag		|	0
+# 170	|	full_flag		|	0
+# 170	|	overflow_flag		|	0
+# 170	|	underflow_flag		|	0
+# 170	|	almost_empty_flag		|	0
+# 170	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ----- Reset Has Started (Time: 170) -----
+# ----- Reset Has Ended (Time: 170) -----
+# ----- Reset Has Started (Time: 170) -----
+# ** Info: ::::::Both WRITE & READ Data are same ::::: Write DATA-137,Read DATA-137::::::
+#    Time: 170 ns  Scope: pkg_1.scoreboard.data_comparision_block File: ../ENV/scoreboard.sv Line: 39
+# ---------At Monitor(RESET CONDITION)---------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 170	|	Functionality		|	WRITE
+# 170	|	wr_enbl		|	0
+# 170	|	rd_enbl		|	1
+# 170	|	wr_data		|	137
+# 170	|	rd_data		|	137
+# 170	|	empty_flag		|	1
+# 170	|	full_flag		|	0
+# 170	|	overflow_flag		|	0
+# 170	|	underflow_flag		|	1
+# 170	|	almost_empty_flag		|	0
+# 170	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# -----------At ScoreBOARD(Original Value)------------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 170	|	Functionality		|	WRITE
+# 170	|	wr_enbl		|	0
+# 170	|	rd_enbl		|	1
+# 170	|	wr_data		|	137
+# 170	|	rd_data		|	137
+# 170	|	empty_flag		|	1
+# 170	|	full_flag		|	0
+# 170	|	overflow_flag		|	0
+# 170	|	underflow_flag		|	1
+# 170	|	almost_empty_flag		|	0
+# 170	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# -----At Functional Coverage Class-----
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 170	|	Functionality		|	WRITE
+# 170	|	wr_enbl		|	0
+# 170	|	rd_enbl		|	1
+# 170	|	wr_data		|	137
+# 170	|	rd_data		|	137
+# 170	|	empty_flag		|	1
+# 170	|	full_flag		|	0
+# 170	|	overflow_flag		|	0
+# 170	|	underflow_flag		|	1
+# 170	|	almost_empty_flag		|	0
+# 170	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ---------At Monitor(RESET CONDITION)---------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 193	|	Functionality		|	WRITE
+# 193	|	wr_enbl		|	0
+# 193	|	rd_enbl		|	0
+# 193	|	wr_data		|	0
+# 193	|	rd_data		|	0
+# 193	|	empty_flag		|	1
+# 193	|	full_flag		|	0
+# 193	|	overflow_flag		|	0
+# 193	|	underflow_flag		|	0
+# 193	|	almost_empty_flag		|	0
+# 193	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ----- Reset Has Ended (Time: 193) -----
+# Write Drive Task Started,193
+# Read Drive Task Started,193
+# -----------At ScoreBOARD(Original Value)------------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 193	|	Functionality		|	WRITE
+# 193	|	wr_enbl		|	0
+# 193	|	rd_enbl		|	0
+# 193	|	wr_data		|	0
+# 193	|	rd_data		|	0
+# 193	|	empty_flag		|	1
+# 193	|	full_flag		|	0
+# 193	|	overflow_flag		|	0
+# 193	|	underflow_flag		|	0
+# 193	|	almost_empty_flag		|	0
+# 193	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ** Info: ::::::Empty Flag is asserted and It's working completely Fine:::::
+#    Time: 193 ns  Scope: pkg_1.scoreboard.run File: ../ENV/scoreboard.sv Line: 102
+# -----At Functional Coverage Class-----
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 193	|	Functionality		|	WRITE
+# 193	|	wr_enbl		|	0
+# 193	|	rd_enbl		|	0
+# 193	|	wr_data		|	0
+# 193	|	rd_data		|	0
+# 193	|	empty_flag		|	1
+# 193	|	full_flag		|	0
+# 193	|	overflow_flag		|	0
+# 193	|	underflow_flag		|	0
+# 193	|	almost_empty_flag		|	0
+# 193	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ---------------At Generator Class-----------------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 195	|	Functionality		|	WRITE
+# 195	|	wr_enbl		|	1
+# 195	|	rd_enbl		|	0
+# 195	|	wr_data		|	137
+# 195	|	rd_data		|	0
+# 195	|	empty_flag		|	0
+# 195	|	full_flag		|	0
+# 195	|	overflow_flag		|	0
+# 195	|	underflow_flag		|	0
+# 195	|	almost_empty_flag		|	0
+# 195	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ------ DRIVER ------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 195	|	Functionality		|	WRITE
+# 195	|	wr_enbl		|	1
+# 195	|	rd_enbl		|	0
+# 195	|	wr_data		|	137
+# 195	|	rd_data		|	0
+# 195	|	empty_flag		|	0
+# 195	|	full_flag		|	0
+# 195	|	overflow_flag		|	0
+# 195	|	underflow_flag		|	0
+# 195	|	almost_empty_flag		|	0
+# 195	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ---------------At Generator Class-----------------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 205	|	Functionality		|	WRITE
+# 205	|	wr_enbl		|	1
+# 205	|	rd_enbl		|	0
+# 205	|	wr_data		|	175
+# 205	|	rd_data		|	0
+# 205	|	empty_flag		|	0
+# 205	|	full_flag		|	0
+# 205	|	overflow_flag		|	0
+# 205	|	underflow_flag		|	0
+# 205	|	almost_empty_flag		|	0
+# 205	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ------ DRIVER ------
+# -------------------transaction class-------------------
+# Time	|	Name		|	Value
+# -------------------------------------------------------
+# 205	|	Functionality		|	WRITE
+# 205	|	wr_enbl		|	1
+# 205	|	rd_enbl		|	0
+# 205	|	wr_data		|	175
+# 205	|	rd_data		|	0
+# 205	|	empty_flag		|	0
+# 205	|	full_flag		|	0
+# 205	|	overflow_flag		|	0
+# 205	|	underflow_flag		|	0
+# 205	|	almost_empty_flag		|	0
+# 205	|	almost_full_flag		|	0
+# -------------------------------------------------------
+# ** Note: $finish    : ../TOP/top.sv(41)
+#    Time: 500 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at ../TOP/top.sv line 41
